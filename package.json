@@ -5,6 +5,9 @@
   "scripts": {
   "start": "node app.js"
   },
+  "engines": {
+  "node": "5.9.1"
+  },
   "dependencies": {
     "express": "latest",
     "firebase": "^2.4.2"

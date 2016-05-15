@@ -4,10 +4,10 @@ var path = require('path');
 
 app.use('/public', express.static(__dirname + '/public'));
 app.use('/pdf', express.static(__dirname + '/pdf'));
-app.use('/view', express.static(__dirname + '/public'));
+app.use('/view', express.static(__dirname + '/view'));
 
 app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname, 'view', '/DCodeHome.html'));
+    res.sendFile(path.join(__dirname, 'view', '/index.html'));
 });
 
 app.get('/displayday5', function(req, res) {
