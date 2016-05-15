@@ -1,7 +1,7 @@
 {
   "name": "dcode_website",
   "version": "0.1.0",
-  "main": "server.js",
+  "main": "app.js",
   "dependencies": {
     "express": "latest",
     "firebase": "^2.4.2"
