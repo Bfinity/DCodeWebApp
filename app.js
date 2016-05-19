@@ -15,7 +15,7 @@ app.get('/displayStudentGallery', function(req, res) {
   res.sendFile(path.join(__dirname, 'view', '/studentGallery.html'));
 });
 
-app.get('/aliaCummings', function(req, res) {
+app.get('/Alia', function(req, res) {
   res.sendFile(path.join(__dirname, 'Student_Presentations', '/Alia/aliaCummingsJavascript.html'));
 });
 
