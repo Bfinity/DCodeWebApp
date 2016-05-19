@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<body>
+<body background="https://s-media-cache-ak0.pinimg.com/736x/84/52/3e/84523e8156941a516f0ad24ff4b24a5e.jpg">
+<h1>JavaScript Can Change Images</h1>
+<h2> Did you know that with a click of a button javascript can change an image?
+On this webpage you will learn how to change an image back and forth. With this you will learn to use javascript and an onclick button.
+You will see that with very simple steps with whatever picture you want it will be able to change. I chose this concept
+because I wanted to go above and beyond with the use of an onclick button and make it my own.Now watch as Beyonce (in the car from formation)
+change to Janelle Monae(on the cover of her electric lady album).</h2>
+<img id="myImage" onclick="changeImage()" src="https://img.buzzfeed.com/buzzfeed-static/static/2016-02/8/12/enhanced/webdr05/enhanced-8158-1454953159-7.jpg" width="500" height="580">
+
+<p>Click the picture for it to change.</p>
+
+<script>
+function changeImage() {
+    var image = document.getElementById('myImage');
+    if (image.src.match("http://static.stereogum.com/uploads/2013/09/JanelleMonae_TheElectricLady.jpg")) {
+      image.src = "https://img.buzzfeed.com/buzzfeed-static/static/2016-02/8/12/enhanced/webdr05/enhanced-8158-1454953159-7.jpg";
+
+    } else {
+        image.src = "http://static.stereogum.com/uploads/2013/09/JanelleMonae_TheElectricLady.jpg";
+    }
+}
+function oneclicked() {
+  alert("Oops!");
+}
+function twoclicked() {
+  alert("Good Job!");
+}
+function namebutton(){
+  prompt("Enter Here");
+}
+</script>
+
+
+<h3>
+<li>  As a student I want to review how to change an image using an onclick button in Javascript.</li>
+<li>    Task:</li>
+<li>  1) Put id on the image and set an onclick method.</li>
+<li>  2)Then start to write your function: Store the image in a variable then do an if check and
+      if one image isn't displayed, display the other.</li>
+</h3>
+<h2> Time to Test Your Skills </h2>
+<button onclick="namebutton()"type="button">Click me to enter your name!</button>
+
+
+<p> What do you have to put on the image before setting an onclick method?</p>
+<ol>
+<li onclick="oneclicked()">Function</li>
+<li onclick="twoclicked()"> ID</li>
+</ol>
+<p>What should your image be stored in?</p>
+<ol>
+<li onclick="oneclicked()">ID</li>
+<li onclick="twoclicked()"> variable</li>
+</ol>
+<p>What type of check should you do after storing a image?</p>
+<ol>
+<li onclick="oneclicked()">Else</li>
+<li onclick="twoclicked()">If</li>
+</ol>
+<p>What is suppose to be learnt from this webpage?</p>
+<ol>
+<li onclick="oneclicked()">How to display a button</li>
+<li onclick="twoclicked()">How to change an image back and forth</li>
+</ol>
+<p>What are we trying to change?</p>
+<ol>
+<li onclick="oneclicked()">The Background Image</li>
+<li onclick="twoclicked()">The Main Image</li>
+</ol>
+<p>Are we using Javascript or HTML?</p>
+<ol>
+<li onclick="oneclicked()">HTML</li>
+<li onclick="twoclicked()">Javascript</li>
+</ol>
+<h4>
+<li>Citations:</li>
+<li> http://www.w3schools.com/jsref/event_onclick.asp</li>
+<li>On This site I reviewed and learned how to make/use an onclick button, Also seeing text once clicked.</li>
+<li>http://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_lightbulb</li>
+<li>On this site I learned and found the code To change an image in javascript using an onclick button.</li>
+</h4>
+</script>
+
+
+
+
+</body>
+</html>

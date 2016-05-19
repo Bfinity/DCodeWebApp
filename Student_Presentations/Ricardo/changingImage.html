@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<body
+ background="http://cdn.macrumors.com/article-new/2015/09/iphone-6s_6s_plus_featured-800x352.jpg">
+
+<h1>The Progression of the iphone using Java Script to show the on click method</h1>
+
+<p>I want to do a version of the onclick button, except when I press a key on the keyboard.
+ Also, I want the computer to make a sound when it switches from picture to picture.
+My goal is to try and make the picture change depending on the key you type, but I would settle to get it to change with only one key.</p>
+
+
+<img id="myImage" onclick="changeImage()" src="http://www.imore.com/sites/imore.com/files/styles/large/public/field/image/2014/03/topic_iphone_5.png?itok=EHmSheG0" width="500" height="500">
+
+<p>Click Your Mouse!</p>
+<p> How did I create this onclick display. Well, google is the answer. But, since this is supposed to be a tutorial, now I can help you create it without using google.
+
+  Step 1- Open Atom
+  Step 2- Set up your &lt;!DOCTYPE html&gt;, and your &lt;html&gt;, then your &lt;body&gt;
+  Step 3- Choose the images that you want to do.
+  Step 4- Type this in- &lt;script&gt;
+  function changeImage() {
+      var image = document.getElementById('myImage');
+      if (image.src.match("Your 2nd image")) {
+          image.src = "Your First Image";
+      } else {
+          image.src = "Your 2nd image";
+      }
+
+<h> Test time!!!!!!!! </h>
+  <p> Whats the project based on? </P>
+<select id-1>
+  <option value="onclick">onclick</option>
+  <option value="onkey">onkey</option>
+</select id-1>
+<p> Is this the progression of an iphone?</p>
+<select id-2>
+<option value="Yes">yes</option>
+<option value="No">no</option>
+<select id-2>
+  <p> What is needed before the hyperlink for your image</p>
+  <select id-3>
+    <option value="src">src</option>
+    <option value="img">img</option>
+    <option value="i.d">i.d.</option>
+
+<script>
+function changeImage() {
+    var image = document.getElementById('myImage');
+    if (image.src.match("https://d13yacurqjgara.cloudfront.net/users/161337/screenshots/1719571/attachments/303273/iphone_6.png")) {
+        image.src = "http://www.imore.com/sites/imore.com/files/styles/large/public/field/image/2014/03/topic_iphone_5.png?itok=EHmSheG0";
+    } else {
+        image.src = "https://d13yacurqjgara.cloudfront.net/users/161337/screenshots/1719571/attachments/303273/iphone_6.png";
+    }
+}
+
+</script>
+
+</body>
+</html>

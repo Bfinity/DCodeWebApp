@@ -1,0 +1,49 @@
+body{
+
+}
+header{
+  text-align: center;
+  heigth: 300px;
+  background: #707070;
+  width: 98.7%;
+  z-index: 10;
+  position: fixed;
+  top: 0px;
+  border-style: solid;
+  border-width: thick;
+}
+#banner{
+    text-align: center;
+  background-image: url("1.jpg");
+  background-color: #cccccc;
+  background-size: cover;
+  width: 99%;
+  height: 300px;
+  position: fixed;
+  top: 70px;
+
+}
+#content{
+    text-align: center;
+  width: 100%;
+  position: relative;
+  top: 350px;
+  background: #9999ff;
+  height: 2000px;
+  border-style: solid;
+}
+h2{
+  font-size: 70px;
+  font-weight: bold;
+  font-family: impact;
+}
+h6{
+  font-size: 20px;
+}
+h7{
+  text-align: left;
+}
+
+h8{
+  text-size:20px;
+}

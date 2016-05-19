@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+  <head>
+    <title> INSERT TITLE </title>
+    <link href = "Collapsing.css" rel= "stylesheet"/>
+    <script src= 'Collapsing.js'></script>
+    <style type="text/css">
+<!--
+.bgclr {background-color: white; color: black; font-weight: bold;}
+-->
+</style>
+
+<script language="JavaScript">
+
+
+<!-- Begin
+// Insert number of questions
+var numQues = 4;
+
+// Insert number of choices in each question
+var numChoi = 3;
+
+// Insert number of questions displayed in answer area
+var answers = new Array(4);
+
+// Insert answers to questions
+answers[0] = "Cascading Style Sheets";
+answers[1] = "Hyper Text Markup Language";
+answers[2] = "Netscape";
+answers[3] = "Asians";
+
+
+function getScore(form) {
+  var score = 0;
+  var currElt;
+  var currSelection;
+  for (i=0; i<numQues; i++) {
+    currElt = i*numChoi;
+    for (j=0; j<numChoi; j++) {
+      currSelection = form.elements[currElt + j];
+      if (currSelection.checked) {
+        if (currSelection.value == answers[i]) {
+          score++;
+          break;
+        }
+      }
+    }
+  }
+  score = Math.round(score/numQues*100);
+  form.percentage.value = score + "%";
+  var correctAnswers = "";
+  for (i=1; i<=numQues; i++) {
+    correctAnswers += i + ". " + answers[i-1] + "\r\n";
+  }
+  form.solutions.value = correctAnswers;
+}
+//  End -->
+</script>
+
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1> Collapsing Header Tutorial </h>
+        </header>
+        <div id="banner">
+          <h2> D-CODE Project <h2>
+            <h4> Monet Heath </h4>
+              <h5> Hijiri Woodberry</h5>
+        </div>
+            <div id="content">
+              <h3> Introduction </h3>
+              <h6> What is a Collapsing Header? </h6>
+              <p> A collapsing header is a style of website design that utilizes HTML, CSS, and possibly Java Script. The basic concept is that
+                 the header or banner is elevated on the z-axis. This allows for the other content to scroll below the specific banner. In our website,
+                 we will teach the user methods to create
+                and customize their own collapsing header. Using resources such as W3Schools and DEVTips the user will be
+                able to further their knowledge. </p>
+                <p> After you fully grasp the concept of the collapsing header, as a web designer, yo can create countless
+                  beautiful websites. Websites that not only look, but feel like it was done by a proffesional. The hardest
+                  part about making a collapsing header is the div tags. You must be certain that they are in order. If not the css
+                  IDs wont change properly </p>
+
+                <h7><ol> <h8>Creating Your Own Collapsing Header </h8>
+                  <li> INSERT INSTRUCTIONS </li>
+                  <li> INSERT INSTRUCTIONS </li>
+                  <li> INSERT INSTRUCTIONS </li>
+                  <li> INSERT INSTRUCTIONS </li>
+                  <li> INSERT INSTRUCTIONS </li>
+                  <ol>
+                    <img src="IMG_1047.jpg" alt="Example" style="width:300px;height:150px;">
+                  </h7>
+
+                  <h3>Web Design Quiz</h3>
+
+<form name="quiz">
+1. What does CSS stand for?
+<ul style="margin-top: 1pt">
+  <li><input type="radio" name="q1" value="Colorful Style Symbols">Colorful Style Symbols</li>
+  <li><input type="radio" name="q1" value="Cascading Style Sheets">Cascading Style Sheets</li>
+  <li><input type="radio" name="q1" value="Computer Style Symbols">Computer Style Symbols</li>
+</ul>
+
+2. What does HTML stand for?
+<ul style="margin-top: 1pt">
+  <li><input type="radio" name="q2" value="Hyper Text Makeup Language">Hyper Text Makeup Language</li>
+  <li><input type="radio" name="q2" value="HTML">HTML </li>
+  <li><input type="radio" name="q2" value="Hyper Text Markup Language">Hyper Text Markup Language</li>
+</ul>
+3. Who created Javascript?
+<ul style="margin-top: 1pt">
+  <li><input type="radio" name="q3" value="Microsoft">Microsoft</li>
+  <li><input type="radio" name="q3" value="Netscape">Netscape</li>
+  <li><input type="radio" name="q3" value="Apple">Apple</li>
+</ul>
+4. Who do you love?
+<ul style="margin-top: 1pt">
+  <li><input type="radio" name="q4" value="Coding">Coding</li>
+  <li><input type="radio" name="q4" value="Your Mother">Your Mother</li>
+  <li><input type="radio" name="q4" value="Asians">Asians</li>
+</ul>
+
+<input type="button" value="Get score" onClick="getScore(this.form)">
+<input type="reset" value="Clear answers">
+<p> Score = <strong><input class="bgclr" type="text" size="5" name="percentage" disabled></strong><br><br>
+Correct answers:<br>
+<textarea class="bgclr" name="solutions" wrap="virtual" rows="4" cols="30" disabled>
+</textarea>
+</form>
+
+
+<p><center>
+<font face="arial, helvetica" size"-2"><br>
+Work Cited:  <a href="http://javascriptsource.com">The JavaScript Source</a></font>
+</center><p>
+
+<!-- Script Size:  3.82 KB -->
+            </div>
+        </div>
+
+      </body>
+</html>
